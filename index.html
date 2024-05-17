@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <script src="index.js"></script>
+    <form id="ageForm">
+        <label for="ageInput">Enter you age:</label><br>
+        <input type="number" id="ageInput" name="ageInput" min="0" ><br><br>
+
+        <button type="button" onclick="checkAge()">
+            Check Result
+        </button>
+    </form>
+    <h2 id="result"></h2>  
+
+    <h1 id="counter"> 0 </h1>
+
+    <!-- Increment and Decrement -->
+    <button onclick="increment()">+</button>
+    <button onclick="decrement()">-</button>
+
+    <h4>Please enter your details:</h4>
+    <form id="classDetails">
+        <input type="text" id="nameInput" minlength="5" placeholder="Enter your full name here"><br><br>
+        <input type="text" id="trackInput" placeholder="Enter your track here"><br><br>
+
+        <button type="button" onclick="registerNameAndTrack()">
+            Register
+        </button><br><br>
+    </form>
+    <h3 id="theResult"></h3>
+</body>
+</html>
